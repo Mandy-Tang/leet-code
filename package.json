@@ -1,0 +1,25 @@
+{
+  "name": "leet-code",
+  "version": "1.0.0",
+  "description": "practice and result for leet code problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandy-Tang/leet-code.git"
+  },
+  "keywords": [
+    "LeetCode"
+  ],
+  "author": "Tang Man",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mandy-Tang/leet-code/issues"
+  },
+  "homepage": "https://github.com/Mandy-Tang/leet-code#readme",
+  "dependencies": {
+    "jest": "^23.1.0"
+  }
+}
