@@ -4,11 +4,15 @@
   "description": "practice and result for leet code problems",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "start": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint ./src/*"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn test"
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "yarn lint && yarn test"
     }
   },
   "repository": {
@@ -24,22 +28,23 @@
     "url": "https://github.com/Mandy-Tang/leet-code/issues"
   },
   "homepage": "https://github.com/Mandy-Tang/leet-code#readme",
-  "dependencies": {
-    "jest": "^23.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^8.2.6",
     "babel-jest": "^23.0.1",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^4.19.1",
+    "eslint": "^5.11.0",
+    "eslint-config-prettier": "^3.3.0",
     "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.27.2",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "husky": "^1.0.0-rc.8",
+    "husky": "^1.2.1",
+    "jest": "^23.1.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
     "regenerator-runtime": "^0.11.1"
   }
 }

@@ -9,5 +9,6 @@
   "plugins": [
     "jest"
   ],
-  "extends": "standard"
+  "extends": ["eslint:recommended", "eslint-config-prettier"],
+  "rules": {}
 }
