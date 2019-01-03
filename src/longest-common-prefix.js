@@ -1,8 +1,9 @@
 /**
+ * vertical scanning
  * @param {string[]} strs
  * @return {string}
  */
-const longestCommonPrefix = function(strs) {
+const verticalScanningApproach = function(strs) {
   if (strs.constructor.name !== "Array") {
     return;
   }
@@ -38,4 +39,46 @@ const longestCommonPrefix = function(strs) {
   return result;
 };
 
-export { longestCommonPrefix };
+/**
+ * divide approach
+ * @param {string[]} strs
+ * @return {string}
+ */
+const longestCommonPrefix = function(strs) {
+  if (!(strs instanceof Array)) {
+    return;
+  }
+
+  return recursiveFunc(strs);
+};
+
+const recursiveFunc = strs => {
+  if (strs.length === 0) {
+    return "";
+  }
+
+  if (strs.length === 1) {
+    return strs[0];
+  }
+
+  const mid = Math.floor(strs.length / 2);
+  const leftStrings = strs.slice(0, mid);
+  const rightStrings = strs.slice(mid);
+  return commonPrefix(recursiveFunc(leftStrings), recursiveFunc(rightStrings));
+};
+
+const commonPrefix = (str1, str2) => {
+  const length = str1.length;
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    if (str2[i] !== undefined && str2[i] === str1[i]) {
+      result = str1.substring(0, i + 1);
+    } else {
+      return result;
+    }
+  }
+
+  return result;
+};
+
+export { verticalScanningApproach, longestCommonPrefix };
