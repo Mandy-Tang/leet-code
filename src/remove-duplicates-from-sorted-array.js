@@ -1,14 +1,17 @@
 /**
+ * splice approach
  * @param {number[]} nums
  * @return {number}
  */
-const removeDuplicates = function(nums) {
+const removeDuplicatesUsingSplice = function(nums) {
   if (!nums || nums.constructor.name !== "Array") {
     return;
   }
 
-  if (nums.length === 1) {
-    return 1;
+  const length = nums.length;
+
+  if (length <= 1) {
+    return length;
   }
 
   for (let i = 1; nums[i] !== undefined; ) {
@@ -20,6 +23,33 @@ const removeDuplicates = function(nums) {
   }
 
   return nums.length;
+};
+
+/**
+ * splice approach
+ * @param {number[]} nums
+ * @return {number}
+ */
+const removeDuplicates = function(nums) {
+  if (!nums || nums.constructor.name !== "Array") {
+    return;
+  }
+
+  const length = nums.length;
+
+  if (length <= 1) {
+    return length;
+  }
+
+  let i = 0;
+
+  for (let j = 1; j < length; j++) {
+    if (nums[i] !== nums[j]) {
+      nums[++i] = nums[j];
+    }
+  }
+
+  return i + 1;
 };
 
 export { removeDuplicates };
