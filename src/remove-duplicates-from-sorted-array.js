@@ -3,27 +3,27 @@
  * @param {number[]} nums
  * @return {number}
  */
-const removeDuplicatesUsingSplice = function(nums) {
-  if (!nums || nums.constructor.name !== "Array") {
-    return;
-  }
+// const removeDuplicatesUsingSplice = function(nums) {
+//   if (!nums || nums.constructor.name !== "Array") {
+//     return;
+//   }
 
-  const length = nums.length;
+//   const length = nums.length;
 
-  if (length <= 1) {
-    return length;
-  }
+//   if (length <= 1) {
+//     return length;
+//   }
 
-  for (let i = 1; nums[i] !== undefined; ) {
-    if (nums[i - 1] === nums[i]) {
-      nums.splice(i, 1);
-    } else {
-      i++;
-    }
-  }
+//   for (let i = 1; nums[i] !== undefined; ) {
+//     if (nums[i - 1] === nums[i]) {
+//       nums.splice(i, 1);
+//     } else {
+//       i++;
+//     }
+//   }
 
-  return nums.length;
-};
+//   return nums.length;
+// };
 
 /**
  * splice approach
