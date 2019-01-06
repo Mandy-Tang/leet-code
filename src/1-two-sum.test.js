@@ -1,4 +1,4 @@
-import twoSum from "./two-sum";
+import twoSum from "./1-two-sum";
 
 describe("tow sum", () => {
   it("should return an array with two elements if it finds that the sum of these two elements equal the given target", () => {

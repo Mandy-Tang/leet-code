@@ -1,4 +1,4 @@
-import { reverse } from "./reverse-integer.js";
+import { reverse } from "./7-reverse-integer.js";
 
 describe("reverse", () => {
   it("should reverse integer correctly", () => {

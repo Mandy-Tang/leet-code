@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from "./longest-common-prefix";
+import { longestCommonPrefix } from "./14-longest-common-prefix";
 
 describe("longestCommonPrefix", () => {
   it("should return undefined if the given parameter is not an array", () => {

@@ -1,4 +1,4 @@
-import { isPalindrome } from "./palindrome-number";
+import { isPalindrome } from "./9-palindrome-number";
 
 describe("isPalindrome", () => {
   it("should return undefined if the given parameter is not an integer", () => {

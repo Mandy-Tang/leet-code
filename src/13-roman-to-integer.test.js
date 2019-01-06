@@ -1,4 +1,4 @@
-import { romanToInt } from "./roman-to-integer";
+import { romanToInt } from "./13-roman-to-integer";
 
 describe("romanToInt", () => {
   it("should return undefined if the input is not a legal parameter", () => {

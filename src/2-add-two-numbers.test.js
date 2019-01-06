@@ -1,4 +1,4 @@
-import { ListNode, addTwoNumbers } from "./add-two-numbers";
+import { ListNode, addTwoNumbers } from "./2-add-two-numbers";
 
 describe("add two numbers", () => {
   it("should add the given two numbers and return it as a link", () => {

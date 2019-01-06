@@ -1,4 +1,4 @@
-import { strStr } from "./implement-strStr";
+import { strStr } from "./28-implement-strStr";
 
 describe("Implement strStr()", () => {
   it("should return 0 if the given needle is an empty string", () => {

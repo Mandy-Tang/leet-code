@@ -1,4 +1,4 @@
-import lengthOfLongestSubstring from "./longest-substring-without-repeating-characters";
+import lengthOfLongestSubstring from "./3-longest-substring-without-repeating-characters";
 
 describe("lengthOfLongestSubstring", () => {
   it("should return undefined if the given string is not a string", () => {

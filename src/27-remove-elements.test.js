@@ -1,4 +1,4 @@
-import { removeElement } from "./remove-elements";
+import { removeElement } from "./27-remove-elements";
 
 describe("removeElement", () => {
   it("should return undefined if the given parametes are not an array of numbers and a number", () => {

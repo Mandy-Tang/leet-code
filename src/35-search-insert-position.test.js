@@ -1,4 +1,4 @@
-import { searchInsert } from "./search-insert-position";
+import { searchInsert } from "./35-search-insert-position";
 
 describe("search insert position", () => {
   it("should return undefined if the given paremters are not an array and a number", () => {

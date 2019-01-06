@@ -1,4 +1,4 @@
-import findMedianSortedArrays from "./median-of-two-sorted-arrays";
+import findMedianSortedArrays from "./4-median-of-two-sorted-arrays";
 
 describe("findMedianSortedArrays", () => {
   it("should return the median value of two given array correctly", () => {

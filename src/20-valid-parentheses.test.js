@@ -1,4 +1,4 @@
-import { isValid } from "./valid-parentheses";
+import { isValid } from "./20-valid-parentheses";
 
 describe("isValid", () => {
   it("should return undefined if the given string is not valid", () => {

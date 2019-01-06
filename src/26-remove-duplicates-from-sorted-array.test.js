@@ -1,4 +1,4 @@
-import { removeDuplicates } from "./remove-duplicates-from-sorted-array";
+import { removeDuplicates } from "./26-remove-duplicates-from-sorted-array";
 
 describe("removeDuplicates", () => {
   it("should return undefined if the given parameter is not an array", () => {
