@@ -11,10 +11,6 @@ var climbStairs = function(n) {
   dp[1] = 1;
   dp[2] = 2;
 
-  if (n <= 2) {
-    return dp[n];
-  }
-
   for (let i = 3; i < n + 1; i++) {
     dp[i] = dp[i - 2] + dp[i - 1];
   }
