@@ -1,18 +1,4 @@
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-
-class ListNode {
-  constructor(val) {
-    this.val = val;
-    this.next = null;
-  }
-}
-
+import ListNode from "./utils/ListNode";
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
@@ -47,4 +33,4 @@ const addTwoNumbers = (l1, l2) => {
   return result.next;
 };
 
-export { ListNode, addTwoNumbers };
+export { addTwoNumbers };

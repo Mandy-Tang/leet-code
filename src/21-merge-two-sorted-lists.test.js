@@ -1,4 +1,5 @@
-import { ListNode, mergeTwoLists } from "./21-merge-two-sorted-lists";
+import { mergeTwoLists } from "./21-merge-two-sorted-lists";
+import ListNode from "./utils/ListNode";
 
 describe("mergeTwoLists", () => {
   it("should return the sorted merge lists correctly", () => {

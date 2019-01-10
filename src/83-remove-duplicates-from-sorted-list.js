@@ -1,9 +1,4 @@
-class ListNode {
-  constructor(val) {
-    this.val = val;
-    this.next = null;
-  }
-}
+import ListNode from "./utils/ListNode";
 /**
  * @param {ListNode} head
  * @return {ListNode}
@@ -30,4 +25,4 @@ const deleteDuplicates = function(head) {
   return resultNode;
 };
 
-export { deleteDuplicates, ListNode };
+export { deleteDuplicates };
