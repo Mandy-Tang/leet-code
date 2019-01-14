@@ -12,11 +12,21 @@ const sortedArrayToBST = function(nums) {
     return null;
   }
 
-  const mid = Math.floor(nums.length / 2);
-  const resultedTree = new TreeNode(nums[mid]);
-  resultedTree.left = sortedArrayToBST(nums.slice(0, mid));
-  resultedTree.right = sortedArrayToBST(nums.slice(mid + 1, nums.length));
-  return resultedTree;
+  return sortedArrayWithIndex(nums, 0, nums.length - 1);
+};
+
+const sortedArrayWithIndex = (nums, startIndex, endIndex) => {
+  if (startIndex > endIndex) {
+    return null;
+  }
+  if (startIndex === endIndex) {
+    return new TreeNode(nums[startIndex]);
+  }
+  const mid = Math.floor((startIndex + endIndex + 1) / 2);
+  const result = new TreeNode(nums[mid]);
+  result.left = sortedArrayWithIndex(nums, startIndex, mid - 1);
+  result.right = sortedArrayWithIndex(nums, mid + 1, endIndex);
+  return result;
 };
 
 export default sortedArrayToBST;
