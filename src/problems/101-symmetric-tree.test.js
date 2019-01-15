@@ -1,5 +1,5 @@
 import { isSymmetric } from "./101-symmetric-tree";
-import TreeNode from "./utils/TreeNode";
+import TreeNode from "../utils/TreeNode";
 
 describe("Symmetric Treed", () => {
   it("should return true if given tree is null", () => {

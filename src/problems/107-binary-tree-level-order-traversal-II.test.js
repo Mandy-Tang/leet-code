@@ -1,4 +1,4 @@
-import TreeNode from "./utils/TreeNode";
+import TreeNode from "../utils/TreeNode";
 import levelOrderBottom from "./107-binary-tree-level-order-traversal-II";
 describe("Binary tree level order traversal", () => {
   it("should return [] if the given tree is null", () => {

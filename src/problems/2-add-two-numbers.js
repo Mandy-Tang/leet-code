@@ -1,4 +1,4 @@
-import ListNode from "./utils/ListNode";
+import ListNode from "../utils/ListNode";
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2

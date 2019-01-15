@@ -1,5 +1,5 @@
-import TreeNode from "./utils/TreeNode";
-import isSameTree from "./test-utils/is-same-tree";
+import TreeNode from "../utils/TreeNode";
+import isSameTree from "../test-utils/is-same-tree";
 import sortedArrayToBST from "./108-convert-sorted-array-to-binary-search-tree";
 
 describe("Convert sorted array to binary search tree", () => {

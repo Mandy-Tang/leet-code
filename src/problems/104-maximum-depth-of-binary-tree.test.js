@@ -1,5 +1,5 @@
 import maxDepth from "./104-maximum-depth-of-binary-tree";
-import TreeNode from "./utils/TreeNode";
+import TreeNode from "../utils/TreeNode";
 
 describe("Find the maximum depth of the binary tree", () => {
   it("should return 0 if the given tree is null", () => {

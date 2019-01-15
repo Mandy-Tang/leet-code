@@ -1,5 +1,5 @@
 import { deleteDuplicates } from "./83-remove-duplicates-from-sorted-list";
-import ListNode from "./utils/ListNode";
+import ListNode from "../utils/ListNode";
 
 describe("Remove Duplicates from sorted List", () => {
   it("should return null if there is no given list", () => {

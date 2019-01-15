@@ -1,4 +1,4 @@
-import { hello } from "./0-hello-world";
+import { hello } from "./hello-world";
 
 describe("hello", () => {
   it("should return world", () => {

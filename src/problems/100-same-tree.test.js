@@ -1,5 +1,5 @@
 import { isSameTree } from "./100-same-tree";
-import TreeNode from "./utils/TreeNode";
+import TreeNode from "../utils/TreeNode";
 
 describe("Same Tree", () => {
   it("should return true if the given two tree are the same", () => {
