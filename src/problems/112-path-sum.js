@@ -4,27 +4,18 @@
  * @return {boolean}
  */
 const hasPathSum = function(root, sum) {
-  const resultSet = new Set();
-  calculateSum(root, 0, resultSet);
-  console.log(resultSet);
-
-  return resultSet.has(sum);
-};
-
-const calculateSum = (tree, currentSum, resultSet) => {
-  if (!tree) {
-    return;
+  if (root === null) {
+    return false;
   }
 
-  const leafSum = tree.val + currentSum;
-
-  if (!tree.left && !tree.right) {
-    resultSet.add(leafSum);
-    return;
+  if (!root.left && !root.right) {
+    return root.val === sum;
   }
 
-  calculateSum(tree.left, leafSum, resultSet);
-  calculateSum(tree.right, leafSum, resultSet);
+  return (
+    hasPathSum(root.right, sum - root.val) ||
+    hasPathSum(root.left, sum - root.val)
+  );
 };
 
 export default hasPathSum;
