@@ -1,13 +1,13 @@
 import maxProfit from "./122-best-time-to-buy-and-sell-stock-ii";
 
 describe("Best Time to Buy and Sell Stock II", () => {
-  xit("should return undefined if the given array is invalid", () => {
+  it("should return undefined if the given array is invalid", () => {
     expect(maxProfit()).toBeUndefined();
     expect(maxProfit(1)).toBeUndefined();
     expect(maxProfit({})).toBeUndefined();
   });
 
-  xit("should return 0 if the length of given array is 0 or 1", () => {
+  it("should return 0 if the length of given array is 0 or 1", () => {
     expect(maxProfit([])).toBe(0);
     expect(maxProfit([1])).toBe(0);
   });
