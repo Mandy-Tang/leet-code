@@ -15,7 +15,6 @@ const getRow = function(rowIndex) {
       row[j] = row[j] + row[j - 1];
     }
     row[0] = 1;
-    console.log(row);
   }
   return row;
 };
