@@ -45,3 +45,7 @@ for length 6: [f(0,5)] // these value can all come from result for length 4
 ```
 
 so we can just use one array with the length to be the length of the given array, the space optimization can reduce to O(n)
+
+## Solution 2:
+
+**Expand Around Center**

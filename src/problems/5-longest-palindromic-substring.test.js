@@ -13,5 +13,6 @@ describe("Longest Palindromic Substring", () => {
     expect(longestPalindrome("ebabc")).toBe("bab");
     expect(longestPalindrome("abcda")).toBe("a");
     expect(longestPalindrome("bb")).toBe("bb");
+    expect(longestPalindrome("cbbd")).toBe("bb");
   });
 });
