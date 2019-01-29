@@ -10,21 +10,22 @@ var myAtoi = function(str) {
 
   str = str.trim();
   const length = str.length;
-  let negative;
+  let negative = false;
   let i = 0;
   if (str[i].match("\\+") || str[i].match("\\-")) {
     negative = str[i] === "-";
     i++;
   }
-  for (; i < length && str[i].match(/[0-9]/) && result < Math.pow(2, 31); i++) {
+  for (; i < length && str[i].match(/[0-9]/); i++) {
     result = result * 10 + Number(str[i]);
+    if (!negative && result > Math.pow(2, 31) - 1) {
+      return Math.pow(2, 31) - 1;
+    }
+    if (negative && result > Math.pow(2, 31)) {
+      return 0 - Math.pow(2, 31);
+    }
   }
-
-  if (result < Math.pow(2, 31)) {
-    return negative ? 0 - result : result;
-  }
-
-  return negative ? 0 - Math.pow(2, 31) : Math.pow(2, 31) - 1;
+  return negative ? 0 - result : result;
 };
 
 export default myAtoi;
