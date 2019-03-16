@@ -16,16 +16,13 @@ var maxSubArray = function(nums) {
     return nums[0];
   }
 
-  const A = new Array(length); // A[i]: the max continuous sub array sum in [0, i] that ends up with nums[i];
-  const B = new Array(length); // B[i]: the max continuous sub array sum in [0, i] that do not ends up with nums[i];
-  A[0] = nums[0];
-  B[0] = Number.MIN_SAFE_INTEGER;
+  const DP = new Array(length);
+  DP[0] = nums[0];
   let result = Number.MIN_SAFE_INTEGER;
 
   for (let i = 1; i < length; i++) {
-    A[i] = Math.max(A[i - 1] + nums[i], nums[i]);
-    B[i] = Math.max(B[i - 1], A[i - 1]);
-    result = Math.max(result, A[i], B[i]);
+    DP[i] = Math.max(DP[i - 1] + nums[i], nums[i]);
+    result = Math.max(DP[i], result);
   }
 
   return result;
