@@ -18,7 +18,7 @@ var maxSubArray = function(nums) {
 
   const DP = new Array(length);
   DP[0] = nums[0];
-  let result = Number.MIN_SAFE_INTEGER;
+  let result = nums[0];
 
   for (let i = 1; i < length; i++) {
     DP[i] = Math.max(DP[i - 1] + nums[i], nums[i]);
