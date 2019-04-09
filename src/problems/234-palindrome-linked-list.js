@@ -22,7 +22,6 @@ var isPalindrome = function(head) {
 
   const length = values.length;
   const mid = Math.floor((length - 1) / 2);
-  console.log(values, mid, length);
 
   for (let i = 0; i < mid + 1; i++) {
     if (values[i] !== values[length - 1 - i]) {
