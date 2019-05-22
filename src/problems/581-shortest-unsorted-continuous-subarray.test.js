@@ -12,5 +12,6 @@ describe("find the shortest length of subarray that if sort the subarray then th
 
   it("should return the mixmum length correctly", () => {
     expect(findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15])).toBe(5);
+    expect(findUnsortedSubarray([0, 1, 2, 3])).toBe(0);
   });
 });
